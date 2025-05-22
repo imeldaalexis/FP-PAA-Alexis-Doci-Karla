@@ -1,0 +1,7 @@
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\obj\Debug\Maze_Game.csproj.AssemblyReference.cache
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\obj\Debug\Maze_Game.csproj.CoreCompileInputs.cache
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\bin\Debug\Maze_Game.exe.config
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\bin\Debug\Maze_Game.exe
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\bin\Debug\Maze_Game.pdb
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\obj\Debug\Maze_Game.exe
+C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\obj\Debug\Maze_Game.pdb
