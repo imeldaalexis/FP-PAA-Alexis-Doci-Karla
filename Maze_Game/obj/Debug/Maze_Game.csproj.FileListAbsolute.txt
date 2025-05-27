@@ -5,3 +5,10 @@ C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\
 C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\bin\Debug\Maze_Game.pdb
 C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\obj\Debug\Maze_Game.exe
 C:\Users\karla\Desktop\TUGAS SEMESTER 4\TUGAS KAMPUS\DAA (PAA)\Quiz 2\Maze_Game\Maze_Game\obj\Debug\Maze_Game.pdb
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\bin\Debug\Maze_Game.exe.config
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\bin\Debug\Maze_Game.exe
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\bin\Debug\Maze_Game.pdb
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\obj\Debug\Maze_Game.csproj.AssemblyReference.cache
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\obj\Debug\Maze_Game.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\obj\Debug\Maze_Game.exe
+C:\Users\lenovo\Documents\2. KULIAH SEM 4\PAA\FP PAA\Maze_Game\obj\Debug\Maze_Game.pdb

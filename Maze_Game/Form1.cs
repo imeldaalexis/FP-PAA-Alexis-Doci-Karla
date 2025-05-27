@@ -12,10 +12,12 @@ namespace Maze_Game
         const int cellSize = 25;
 
         char[,] maze = new char[rows, cols];
-        int playerX = 1, playerY = 1;
         int goalX = cols - 2, goalY = rows - 2;
 
-        Random rand = new Random(); // Shared Random instance for better randomness
+        Player player1;
+        Player player2;
+
+        Random rand = new Random();
 
         public Form1()
         {
@@ -26,6 +28,7 @@ namespace Maze_Game
             this.KeyPreview = true;
 
             GenerateMaze();
+
             this.Paint += Form1_Paint;
             this.KeyDown += Form1_KeyDown;
         }
@@ -37,7 +40,13 @@ namespace Maze_Game
                     maze[y, x] = '#';
 
             DFS(1, 1);
-            maze[playerY, playerX] = 'P';
+
+            // Initialize players
+            player1 = new Player(1, 1, 'P');
+            player2 = new Player(1, cols - 2, 'Q');
+            maze[player1.Y, player1.X] = player1.Symbol;
+            maze[player2.Y, player2.X] = player2.Symbol;
+
             maze[goalY, goalX] = 'G';
         }
 
@@ -87,6 +96,7 @@ namespace Maze_Game
                     {
                         case '#': brush = Brushes.Black; break;
                         case 'P': brush = Brushes.Green; break;
+                        case 'Q': brush = Brushes.Blue; break;
                         case 'G': brush = Brushes.Gold; break;
                     }
 
@@ -98,26 +108,43 @@ namespace Maze_Game
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            int newX = playerX;
-            int newY = playerY;
+            bool moved = false;
 
-            if (e.KeyCode == Keys.Up) newY--;
-            else if (e.KeyCode == Keys.Down) newY++;
-            else if (e.KeyCode == Keys.Left) newX--;
-            else if (e.KeyCode == Keys.Right) newX++;
+            // Player 1 - Arrow keys
+            if (e.KeyCode == Keys.Up) moved = player1.Move(0, -1, maze);
+            else if (e.KeyCode == Keys.Down) moved = player1.Move(0, 1, maze);
+            else if (e.KeyCode == Keys.Left) moved = player1.Move(-1, 0, maze);
+            else if (e.KeyCode == Keys.Right) moved = player1.Move(1, 0, maze);
 
-            if (maze[newY, newX] == ' ' || maze[newY, newX] == 'G')
+            // Player 2 - WASD
+            else if (e.KeyCode == Keys.W) moved = player2.Move(0, -1, maze);
+            else if (e.KeyCode == Keys.S) moved = player2.Move(0, 1, maze);
+            else if (e.KeyCode == Keys.A) moved = player2.Move(-1, 0, maze);
+            else if (e.KeyCode == Keys.D) moved = player2.Move(1, 0, maze);
+
+            if (moved == true)
             {
-                maze[playerY, playerX] = ' ';
-                playerX = newX;
-                playerY = newY;
-                maze[playerY, playerX] = 'P';
-                Invalidate(); // redraw
+                Invalidate(); // Redraw
+                CheckVictory();
+            }
+        }
 
-                if (playerX == goalX && playerY == goalY)
-                {
-                    MessageBox.Show("🎉 You reached the goal!", "Victory");
-                }
+        private void CheckVictory()
+        {
+            if (player2.IsHuntedDown(player1))
+            {
+                MessageBox.Show("🎉 Player 1 Successfully Hunted Player 2!", "Victory");
+                this.Close();
+            }
+            else if (player1.IsAtGoal(goalX, goalY))
+            {
+                MessageBox.Show("🎉 Player 1 reached the goal!", "Victory");
+                this.Close();
+            }
+            else if (player2.IsAtGoal(goalX, goalY))
+            {
+                MessageBox.Show("🎉 Player 2 reached the goal!", "Victory");
+                this.Close();
             }
         }
     }

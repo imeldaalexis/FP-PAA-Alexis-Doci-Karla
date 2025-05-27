@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\",
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|c:\\users\\karla\\desktop\\tugas semester 4\\tugas kampus\\daa (paa)\\quiz 2\\maze_game\\maze_game\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|c:\\users\\lenovo\\documents\\2. kuliah sem 4\\paa\\fp paa\\maze_game\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|solutionrelative:maze_game\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\maze_game\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|solutionrelative:maze_game\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|c:\\users\\karla\\desktop\\tugas semester 4\\tugas kampus\\daa (paa)\\quiz 2\\maze_game\\maze_game\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\maze_game\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|solutionrelative:maze_game\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|c:\\users\\karla\\desktop\\tugas semester 4\\tugas kampus\\daa (paa)\\quiz 2\\maze_game\\maze_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|c:\\users\\lenovo\\documents\\2. kuliah sem 4\\paa\\fp paa\\maze_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20253211-F06C-4926-A6F2-30A43F1D7630}|Maze_Game\\Maze_Game.csproj|solutionrelative:maze_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,28 +26,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Player.cs",
+              "RelativeDocumentMoniker": "Maze_Game\\Player.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Player.cs",
+              "RelativeToolTip": "Maze_Game\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T08:53:03.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\Maze_Game\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Form1.cs",
               "RelativeDocumentMoniker": "Maze_Game\\Form1.cs",
-              "ToolTip": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\Maze_Game\\Form1.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Form1.cs",
               "RelativeToolTip": "Maze_Game\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T15:02:23.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\Maze_Game\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Form1.cs",
               "RelativeDocumentMoniker": "Maze_Game\\Form1.cs",
-              "ToolTip": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\Maze_Game\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Form1.cs [Design]",
               "RelativeToolTip": "Maze_Game\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T15:01:40.522Z",
@@ -51,13 +76,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\Maze_Game\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Program.cs",
               "RelativeDocumentMoniker": "Maze_Game\\Program.cs",
-              "ToolTip": "C:\\Users\\karla\\Desktop\\TUGAS SEMESTER 4\\TUGAS KAMPUS\\DAA (PAA)\\Quiz 2\\Maze_Game\\Maze_Game\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\2. KULIAH SEM 4\\PAA\\FP PAA\\Maze_Game\\Program.cs",
               "RelativeToolTip": "Maze_Game\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T15:00:34.463Z",
               "EditorCaption": ""
