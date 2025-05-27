@@ -30,6 +30,7 @@ Pada kode diatas,
 `Application.Run(new Form1());` supaya aplikasi menjalankan main form.
 
 ### Part 2: Player.Cs
+#### Potongan Kode Besar
 ```
     public class Player
     {
@@ -74,5 +75,66 @@ Pada kode diatas,
         }
     }
 ```
+#### Penjelasan Potongan dari Potongan Kode Besar
+Penjelasan kode Player.cs akan dibuat dari potongan-potongan kode di atas
+```
+        public int X { get; private set; }
+        public int Y { get; private set; }
+        public char Symbol { get; }
+```
+Pada bagian ini, variabel dideklarasikan dengan konsep enkapsulasi, dimana read untuk variabel X dan Y dibuat publik, sementara writenya dibuat private. Symbol hanya diperbolehkan untuk di read saja.
 
-Pada kelas Player.Cs
+```
+public Player(int startX, int startY, char symbol)
+        {
+            X = startX;
+            Y = startY;
+            Symbol = symbol;
+        }
+```
+Bagian ini merupakan konstruktor, dimana objek Player akan dibangun, pengguna harus menentukan X, Y serta Symbol untuk membuat objek player ini. 
+
+
+```
+public bool Move(int dx, int dy, char[,] maze)
+        {
+            int newX = X + dx;
+            int newY = Y + dy;
+
+            if (newY >= 0 && newY < maze.GetLength(0) &&
+                newX >= 0 && newX < maze.GetLength(1) &&
+                (maze[newY, newX] == ' ' || maze[newY, newX] == 'G' || maze[newY, newX] == 'P' || maze[newY, newX] == 'Q'))
+            {
+                maze[Y, X] = ' ';
+                X = newX;
+                Y = newY;
+                maze[Y, X] = Symbol;
+                return true;
+            }
+
+            return false;
+        }
+```
+Bagian ini merupakan salah satu method yang bisa digunakan oleh class yang menginherit Player. 
+Parameter yang digunakan adalah jumlah stride dari player (`dx` dan `dy`) serta labirin dalam bentuk array 2d dalam wujud character `char[,] maze`.
+Posisi baru akan di assign di variabel `newX` dan `newY` dengan cara menjumlahkan posisi player lama dengan stridenya.
+
+```
+            if (newY >= 0 && newY < maze.GetLength(0) &&
+                newX >= 0 && newX < maze.GetLength(1) &&
+                (maze[newY, newX] == ' ' || maze[newY, newX] == 'G' || maze[newY, newX] == 'P' || maze[newY, newX] == 'Q'))
+            {
+                maze[Y, X] = ' ';
+                X = newX;
+                Y = newY;
+                maze[Y, X] = Symbol;
+                return true;
+            }
+```
+Jika posisi terbaru tidak menyalahi aturan batas array maze, dan posisi baru yang akan ditempati oleh `NewX` dan `NewY` adalah kotak kosong atau kotak final atau tempat lawan jenis player, maka posisi akan di update dan mengembalikan true untuk di validate di Form. 
+
+```
+    return false;
+        }
+```
+Selain itu return false
