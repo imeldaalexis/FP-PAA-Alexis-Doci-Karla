@@ -119,22 +119,22 @@ Bagian ini merupakan salah satu method yang bisa digunakan oleh class yang mengi
 Parameter yang digunakan adalah jumlah stride dari player (`dx` dan `dy`) serta labirin dalam bentuk array 2d dalam wujud character `char[,] maze`.
 Posisi baru akan di assign di variabel `newX` dan `newY` dengan cara menjumlahkan posisi player lama dengan stridenya.
 
-```
-            if (newY >= 0 && newY < maze.GetLength(0) &&
-                newX >= 0 && newX < maze.GetLength(1) &&
-                (maze[newY, newX] == ' ' || maze[newY, newX] == 'G' || maze[newY, newX] == 'P' || maze[newY, newX] == 'Q'))
-            {
-                maze[Y, X] = ' ';
-                X = newX;
-                Y = newY;
-                maze[Y, X] = Symbol;
-                return true;
-            }
-```
 Jika posisi terbaru tidak menyalahi aturan batas array maze, dan posisi baru yang akan ditempati oleh `NewX` dan `NewY` adalah kotak kosong atau kotak final atau tempat lawan jenis player, maka posisi akan di update dan mengembalikan true untuk di validate di Form. 
 
-```
-    return false;
-        }
-```
 Selain itu return false
+
+```
+    public bool IsAtGoal(int goalX, int goalY)
+    {
+        return X == goalX && Y == goalY;
+    }
+```
+Bagian ini merupakan salah satu method untuk mengecek posisi player saat ini dengan koordinat gol. Return hanya akan mengembalikan true jika dan hanya jika kedua koordinat (X, Y) terletak di (golX, golY)
+
+```
+     public bool IsHuntedDown(Player other)
+     {
+         return this.X == other.X && this.Y == other.Y;
+     }
+```
+Bagian ini merupakan salah satu method untuk mengecek posisi player saat ini dengan posisi player yang lain. Return hanya akan mengembalikan true jika dan hanya jika kedua koordinat (X, Y) terletak di koordinat lawan (other.X, other.Y)
